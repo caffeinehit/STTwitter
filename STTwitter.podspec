@@ -6,12 +6,12 @@ Pod::Spec.new do |s|
 
   s.license      = {
     :type => 'New BSD',
-    :file => 'LICENCE.txt'
+    :file => 'LICENSE.txt'
   }
 
   s.homepage     = "https://github.com/nst/STTwitter/"
   s.authors      = 'Nicolas Seriot', 'Frank Dowsett', 'xnyhps', 'pawelniewie', 'Bavarious'
-  s.source       = { :git => "https://github.com/nst/STTwitter.git", :tag => '0.0.5' }
+  #s.source       = { :git => "https://github.com/nst/STTwitter.git", :tag => '0.0.5' }
 
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
