@@ -501,6 +501,14 @@ NSString * const kSTPOSTDataKey = @"kSTPOSTDataKey";
     
     NSString *requestID = [[NSUUID UUID] UUIDString];
     
+    void (^foo)(id json) = nil;
+    
+    if (progressBlock) {
+        foo = ^void(id json) {
+            progressBlock(requestID, json);
+        };
+    }
+    
     __block STHTTPRequest *r = [STHTTPRequest twitterRequestWithURLString:urlString
                                                    stTwitterProgressBlock:^(id json) {
                                                        if(progressBlock) progressBlock(requestID, json);
