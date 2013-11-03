@@ -4,10 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "A comprehensive Objective-C library for Twitter's REST API 1.1."
   s.homepage     = "https://github.com/nst/STTwitter"
 
-  s.license      = {
-    :type => 'New BSD',
-    :file => 'LICENSE.txt'
-  }
+  s.license = 'New BSD'
 
   s.homepage     = "https://github.com/nst/STTwitter/"
   s.authors      = 'Nicolas Seriot', 'Frank Dowsett', 'xnyhps', 'pawelniewie', 'Bavarious'
